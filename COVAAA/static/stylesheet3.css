@@ -1,0 +1,77 @@
+.India_map{
+    height: 700px;
+    width: 100vw;
+    background-color: rgb(0, 115, 255);
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+ul.topnav li a:hover {
+    background-color: #1e81b0;
+    color: #fff;
+}
+
+.india_graphs h1
+{
+    padding-left: 40px;
+    color: #160082;
+}
+
+.graph_1{
+    height: 500px;
+    width: 100vw;
+    padding-top: 20px;
+    background-color: #eee;
+}
+.graph_2{
+    height: 500px;
+    width: 100vw;
+    padding-top: 20px;
+    background-color: rgba(98, 75, 75, 0.23);
+}
+
+.graph_3{
+    height: 500px;
+    width: 100vw;
+    padding-top: 20px;
+    background-color: #eee;
+}
+
+.form-india {
+    /* border-radius: 5px; */
+    background-color: rgb(0, 115, 255);
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+.form-india h2{
+    color: white;
+}
+.form-india .label_heading{
+    color: white;
+}
+  .form-india input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-india input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-india input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  

@@ -1,0 +1,70 @@
+{% extends 'COVAAA/layout.html' %}
+
+<title>{% block title %}COVAAA : World{% endblock %}</title>
+
+{% block body %}
+<body>
+<div class="main">
+  <h1 class="whead">World Covid Cases Till Now</h1>
+  <div class="stats">
+      <span class="st d1">Confirmed: {{cases.Confirmed}}</span>
+      <span class="st d2">Deaths : {{cases.Death}}</span>
+      <span class="st d3">Recovered: {{cases.Recovered}}</span>
+      <span class="st d4">Active: {{cases.Active}}</span>
+  </div>
+  <div class="map">
+    {{ world_map | safe }}
+  </div>
+  
+</div>
+
+<div class="tb">
+  <h1 class="ha">Top 10 Countries</h1>
+  <div class="table-responsive tt">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Country</th>
+                <th scope="col" style ='background-color: #4AE0DF;'>Cases</th>
+                <th scope="col" style ='background-color:#E0CD67;'>Deaths</th>
+                <th scope="col" style ='background-color:#E051BA;'>Recoveries</th>
+                <th scope="col">Last Update</th>
+              </tr>
+        </thead>
+     <tbody>
+       {% for num in table %}
+        <tr class="table-warning">
+          <td scope="col">{{num.country}}</td>
+          <td scope="col" style ='background-color: #4AE0DF;'>{{num.confirmed}}</td>
+          <td scope="col" style ='background-color:#E0CD67;'>{{num.deaths}}</td>
+          <td scope="col" style ='background-color:#E051BA;'>{{num.recovered}}</td>
+          <td scope="col">{{num.last_update}}</td>
+          </tr>
+          {% endfor %}          
+     </tbody>
+    </table>
+  </div>
+</div>
+<div class="gr1">
+  <h1 class="whead2">Bar Graph Representation</h1>
+  {{ bubble | safe }}
+</div>
+<div class="gr2">
+  <h1 class="whead2">Few Other Graphs</h1>
+  {{ bar_deaths | safe }}<br>
+  {{ bar_confirmed | safe }}<br>
+  {{ bar_recovered | safe }}
+</div>
+<div class="form-india">
+  <h2>Country Wise Prediction</h2>
+  <form action="{% url 'world' %}" method="post">
+    {% csrf_token %}
+    <label for="fname" class="label_heading lm">Enter the Country Name </label>
+    <input type="text" name = "country" ext_state autocomplete="off" placeholder="Enter the country ..">
+    <input type="submit" value="Submit">
+  </form>  
+</div>
+{% endblock %}
+
+
+

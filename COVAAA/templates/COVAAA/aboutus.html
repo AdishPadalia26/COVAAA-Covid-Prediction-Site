@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'COVAAA/card.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>COVAAA : About Us</title>
+</head>
+<body>
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'world' %}">World</a></li>
+        <li><a href="{% url 'india' %}">India</a></li>
+        <li><a href="{% url 'about' %}">About us</a></li>
+        <!-- <li class=" topnav-right"><a  href="#signup">Sign Up</a></li>
+        <li class=" topnav-right"><a href="#signin">Sign In</a></li> -->
+        <li class="DropdownIcon"><a href="javascript:void(0)" onclick= "dropdownmenu()">&#9776;</a></li>
+  </ul>
+</nav>
+<div class="who">
+  <div class="heading">
+    <h1>COVAAA</h1>
+  </div> 
+  <div class="problem">
+    <h3>Problem statement : </h3>
+    <p>Coronavirus disease (COVID-19) is an inflammation disease from a new virus. The disease causes respiratory ailment  with manifestations,, and in progressively serious cases, the problem in breathing and death. Coronavirus has been perceived as a worldwide pandemic
+    </p>
+    <p>Initially we used to be unsure about how the cases will rise or fall in the upcoming days. Thus we could not prepare for the same and lost a lot of time and resources.</p>
+    <p>Using this software,we will be able to predict the covid cases for the next 30 days. This will ensure we can make adequate preparations for the same.</p>
+  </div>
+  <div class="problem">
+    <h3>Solution : </h3>
+    <p>A Machine Learning Model has been designed on the basis of Facebook Prophet Model.This model gives us accurrate predictions by taking into account two parameters (time, parameter to be predicted).
+    </p>
+    <p>Here, we have intially analysed the world's covid cases country-wise data for the past two years and depicted it using world maps and bar-graphs for clear understanding.</p>
+    <p>Further, we have also analysed India's covid cases state-wise and depicted it using India's map and graphs</p>
+    <p>We have also used this past data to predict covid cases of the world country-wise and also covid cases of the India state-wise for the next 30 days.</p>
+  </div>
+</div>
+<div class="problem sol">
+  <h3>Tech Stack used : </h3><br><br>
+  <div class="row">
+    <div class="col col-sm-4 pic1">
+      <img src="{% static 'COVAAA/fbprophet.png' %}" alt=fbprophet>
+    </div>
+    <div class="col-4 d-flex justify-content-center pic1">
+      <img src="{% static 'COVAAA/django.png' %}" alt="django">
+    </div>
+    <div class="col-4 d-flex justify-content-center pic1">
+      
+      <img src="{% static 'COVAAA/css.png' %}" alt="css">
+    </div>  
+  </div>
+<br><br><br>
+  <div class="row">
+    <div class="col-4 d-flex justify-content-center pic1">
+      <img src="{% static 'COVAAA/numpy.png' %}" alt="numpy">
+        
+    </div>
+    <div class="col-4 d-flex justify-content-center pic1">
+      <img src="{% static 'COVAAA/pandas.png' %}" alt="pandas">
+    </div>
+    <div class="col-4 d-flex justify-content-center pic1">
+      
+      <img src="{% static 'COVAAA/html.png' %}" alt="html">
+    </div>  
+  </div>
+</div>
+<div class="founders">
+  <h1 class="fu">Founders</h1>
+  <div class="container">
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'COVAAA/ayush.jpg' %}" alt="card__image" class="card__image" width="600" height="250">
+      </div>
+      <div class="card__body">
+        <a href="https://www.linkedin.com/in/ayush-b-b05a0a20b/"><h4>Ayush Bhandarkar</h4></a>
+        <small>2020400001</small>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <div class="user__info">
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'COVAAA/Anmol.jpg' %}" alt="card__image" class="card__image" width="600" height="250">
+      </div>
+      <div class="card__body">
+        <a href="https://www.linkedin.com/in/anmol-chokshi-a23b35217/"><h4>Anmol Chokshi</h4></a>
+        <small>2020400003</small>
+
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <div class="user__info">
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'COVAAA/Adish.jpg' %}" alt="card__image" class="card__image" width="600" height="250">
+      </div>
+      <div class="card__body">
+        <a href="https://www.linkedin.com/in/adish-padalia-a3768a230/"><h4>Adish Padalia</h4></a>
+        <small>2020400031</small>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <div class="user__info">
+            <h5></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/82890f6533.js" crossorigin="anonymous"></script>
+ 
+  
+      <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+       <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+

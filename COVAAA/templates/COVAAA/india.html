@@ -1,0 +1,44 @@
+{% extends 'COVAAA/layout.html' %}
+
+{%block title%}COVAAA : India{% endblock %}
+
+
+{% block body %}
+<div class="India_map">
+  <h1>India's cases till now</h1>
+  <div class="inner_map">
+    {{ map | safe }}
+  </div>
+</div>
+
+<div class="india_graphs">
+  <div class="graph_1">
+    <h1>Distribution of Number of Active Cases</h1>
+    <div class="display_1">
+      {{ active | safe }}
+    </div>
+  </div>
+  <div class="graph_2">
+    <h1>Distribution of Number of Cured Cases</h1>
+    <div class="display_2">
+      {{ cured | safe }}
+    </div>
+  </div>
+  <div class="graph_3">
+    <h1>Growth of different types of cases</h1>
+    <div class="display_3">
+      {{ all | safe }}
+    </div>
+  </div>
+</div>
+<div class="form-india">
+  <h2>State Wise Prediction : </h2>
+  <form action="{% url 'india' %}" method="post">
+    {% csrf_token %}
+    <label for="fname" class="label_heading lm">Enter the State Name </label>
+    <input type="text"  ext_state autocomplete="off" name="state_name" placeholder="Enter the state ..">
+    <input type="submit" value="Submit">
+  </form>  
+</div>
+
+{%endblock%}

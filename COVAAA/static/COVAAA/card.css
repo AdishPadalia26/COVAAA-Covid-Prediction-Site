@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  /* background: #7f7fd5; */
+  background: linear-gradient(to right, #6eeae1, rgb(96, 137, 240), #3431e7);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem rgba(2, 8, 111, 0.5);
+  border-radius: 1em;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  margin:10% 5%;
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+small {
+  color: #666;
+  text-align: center;
+  padding-top: 0;
+}
+
+.fu{
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(247, 217, 65), rgb(230, 100, 19));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 70px;
+
+}
+/* about us */
+ul.topnav li a:hover {
+  background-color: #1e81b0;
+  color: #fff;
+}
+
+.problem{
+  padding-left: 100px;
+  width: 90vw;
+}
+
+.problem h3{
+  background: -webkit-linear-gradient(rgb(237, 112, 9),rgb(254, 254, 56));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+.heading h1{
+  color: #160082;
+  -webkit-background-clip: text;
+  font-size: 8rem;
+}
+
+.heading{
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+.sol{
+  padding-bottom: 5rem;
+}
+
+.pic1 img{
+  height: 100px;
+  width: auto;
+}
+p{
+  font-size: 2rem;
+  color: white;
+}
+
+/* navabr */
+.up{
+  margin: 0;
+  padding: 0;
+}
+.up img{
+  margin: 0;
+  padding:0;
+  width: 100%;
+  height: 45%;
+  opacity: 0.85;
+}
+
+nav{
+  width: 100%;
+  margin: 0;
+  /* margin-bottom: 20px; */
+}
+
+nav ul{
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li{ 
+  list-style: none;
+  float: left;
+}
+ul.topnav li.topnav-right{
+  float: right;
+}
+
+ul.topnav li a{
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+  /* font-family: 'Tapestry', cursive; */
+}
+ul.topnav li a:hover {
+  background-color: #1e81b0;
+  color: #fff;
+}
+ul.topnav li.DropdownIcon{
+  display: none;
+}
+
+/*############ Defaults #############*/
+nav,
+header{
+  display:block;
+  }
+body{
+  line-height: 1;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 100px;
+  padding-bottom: 4%;
+}
+
+label{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 28x;
+  line-height: 1.2;
+}
+article p{
+  font-size: 35px;
+  padding: 20px;
+}
+*{
+  box-sizing: border-box;
+}
+/*########## Header ############*/
+
+
+.section2header{
+  font-size: 64px;
+  text-align: center;
+}
+div.box{
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15),
+      0 2px 3px 0 rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 36px 24px 40px 24px;
+  margin: 24px;
+  border-radius: 7px;
+}
+div.icon{
+  width: 100%;
+  text-align: center;
+}
+
+/*############ Nav Bar #############*/
+
+nav{
+  width: 100%;
+  margin: 0;
+}
+
+nav ul{
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li{ 
+  list-style: none;
+  float: left;
+}
+ul.topnav li.topnav-right{
+  float: right;
+}
+
+ul.topnav li a{
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+ul.topnav li a:hover {
+  background-color: #0080ff;
+  color: #fff;
+}
+ul.topnav li.DropdownIcon{
+  display: none;
+}

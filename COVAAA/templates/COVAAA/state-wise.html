@@ -1,0 +1,28 @@
+{% extends 'COVAAA/layout.html' %}
+
+{% block title %}COVAAA : {{ name }}{% endblock %}
+
+{% block body %}
+    <div class="data">
+        <h1 class="data_h">{{name}} </h1>
+        <div class="main">
+            <h1 class="whead">{{name}}'s Covid Cases Till Now</h1>
+            <div class="stats">
+                <span class="st d1">Confirmed: {{ box.0 }}</span>
+                <span class="st d2">Deaths: {{ box.1 }}</span>
+                <span class="st d3">Recoveries: {{ box.2 }}</span>
+                <span class="st d4">Active: {{ box.3 }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="rcd_graph">
+        <h1>Graph of cases till now : </h1>
+        <div>
+            {{ graph | safe }}
+        </div>
+    </div>
+    <div class="prediction">
+        <h1>Prediction for {{name}} : </h1>
+        <div class = "predict">{{ predict_graph | safe }}</div>
+    </div>
+{% endblock %}

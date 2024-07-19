@@ -1,0 +1,39 @@
+/* about us */
+ul.topnav li a:hover {
+    background-color: #1e81b0;
+    color: #fff;
+}
+
+.problem{
+    padding-left: 100px;
+    width: 90vw;
+}
+
+.problem h3{
+    background: -webkit-linear-gradient(rgb(237, 112, 9),rgb(254, 254, 56));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+}
+.heading h1{
+    color: #160082;
+    -webkit-background-clip: text;
+    font-size: 8rem;
+}
+
+.heading{
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+.sol{
+    padding-bottom: 5rem;
+}
+
+.pic1 img{
+    height: 100px;
+    width: auto;
+}
+p{
+    font-size: 2rem;
+    color: white;
+}
